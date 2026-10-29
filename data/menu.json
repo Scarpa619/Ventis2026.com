@@ -1,0 +1,133 @@
+{
+  "restaurant": {
+    "name": "Venti's Aperitivo Bar",
+    "shortName": "Venti's",
+    "descriptor": "Aperitivo Bar",
+    "tagline": "Recipes from Northern Italy, Southern Italy and Sicily, dangerously blended.",
+    "taglineSecond": "Our pesto is made fresh every day.",
+    "drinksTagline": "Beer, wine and good company.",
+    "signoff": "Grazie, and we'll see you soon!",
+    "cuisine": "Italian",
+    "priceRange": "$$",
+    "address": {
+      "street": "12265 Scripps Poway Parkway #113",
+      "city": "Poway",
+      "state": "California",
+      "stateCode": "CA",
+      "zip": "92064",
+      "country": "US"
+    },
+    "phoneDisplay": "858.864.6868",
+    "phoneTel": "+18588646868",
+    "email": "italiancaterings@aol.com",
+    "hours": [
+      {
+        "label": "Monday through Saturday",
+        "open": "5 PM",
+        "close": "10 PM",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "17:00",
+        "closes": "22:00"
+      },
+      {
+        "label": "Sunday",
+        "open": "9:30 AM",
+        "close": "8:30 PM",
+        "days": ["Sunday"],
+        "opens": "09:30",
+        "closes": "20:30"
+      }
+    ],
+    "links": {
+      "directions": "https://www.google.com/maps/dir/?api=1&destination=12265%20Scripps%20Poway%20Parkway%20%23113%2C%20Poway%2C%20CA%2092064",
+      "mapEmbed": "https://www.google.com/maps?q=12265%20Scripps%20Poway%20Parkway%20%23113%2C%20Poway%2C%20CA%2092064&output=embed",
+      "menuPdf": "assets/Ventis_Menu.pdf"
+    }
+  },
+  "specialty": {
+    "eyebrow": "La Specialità",
+    "name": "The Venti Meal Platter",
+    "price": 20,
+    "description": "Ravioli Bolognese with chicken and cheese, shrimp penne pesto, meatballs, sausage and peppers, Caprese or Caesar salad and garlic bread.",
+    "note": "Venti means twenty. Twenty dollars. Perfetto!"
+  },
+  "primi": {
+    "italian": "Primi",
+    "english": "Pasta Plates",
+    "price": 16,
+    "note": "Each plate comes with Caesar salad and garlic bread.",
+    "pastas": [
+      "Ravioli with Chicken and Cheese",
+      "Baked Rigatoni",
+      "Shrimp Penne",
+      "Linguine and Clam Sauce",
+      "Farfalle Bowties",
+      "Stuffed Shells with Sausage"
+    ],
+    "sauces": {
+      "title": "Choose Your Sauce",
+      "options": [
+        { "name": "Bolognese", "description": "hearty meat ragù" },
+        { "name": "Pesto", "description": "fresh basil, made daily" },
+        { "name": "Besciamella", "description": "silky Italian white sauce" }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "insalate",
+      "italian": "Insalate",
+      "english": "Salads",
+      "items": [
+        { "name": "Caprese Salad", "price": 12, "description": "Fresh mozzarella, sliced tomatoes, drizzle of olive oil, balsamic and pesto." },
+        { "name": "Sicilian Salad", "price": 9, "description": "Cucumber, tomatoes and red onion, marinated in Italian vinaigrette." }
+      ]
+    },
+    {
+      "id": "cucina",
+      "italian": "Dalla Cucina",
+      "english": "From the Kitchen",
+      "items": [
+        { "name": "Sausage, Peppers and Meatballs", "price": 10, "description": "Served with garlic bread for every last drop of sauce." }
+      ]
+    },
+    {
+      "id": "dolci",
+      "italian": "Dolci",
+      "english": "Dessert",
+      "items": [
+        { "name": "Torta", "price": 6, "description": "Pound cake with cannoli cream and berries." }
+      ]
+    }
+  ],
+  "brunch": {
+    "name": "NFL Sunday Brunch",
+    "price": 12,
+    "description": "Italian omelettes, potatoes, sausage, French toast and fruit.",
+    "note": "Doors open Sundays at 9:30 AM, just in time for the early kickoff."
+  },
+  "beer": {
+    "italian": "Birra",
+    "english": "Beer",
+    "groups": [
+      { "name": "Bottles and Cans", "price": 6, "items": ["Modelo", "Stone Delicious IPA", "AleSmith .394", "Coors Light", "Ballast Point Sculpin"] },
+      { "name": "On Draft", "price": 8, "items": ["Stone IPA", "Firestone 805", "Sierra Nevada", "Stella Artois"] }
+    ]
+  },
+  "wine": {
+    "italian": "Vino",
+    "english": "Wine",
+    "tiers": [
+      { "name": "House Wines", "price": 9 },
+      { "name": "Premium Wines", "price": 12 }
+    ],
+    "varietals": [
+      { "name": "Chardonnay", "producers": ["Ferrari Carano", "DAOU", "Joel Gott", "Butter", "Kendall Jackson"] },
+      { "name": "Cabernet Sauvignon", "producers": ["Ferrari Carano", "Piattelli", "Sebastiani", "Josh Reserve", "DAOU"] },
+      { "name": "Sauvignon Blanc", "producers": ["Kim Crawford", "Donovan Parke"] },
+      { "name": "Pinot Grigio", "producers": ["Santa Marcella"] },
+      { "name": "Merlot", "producers": ["Coppola"] },
+      { "name": "Pinot Noir", "producers": ["Meiomi"] }
+    ]
+  }
+}
