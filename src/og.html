@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <title>Open Graph image source</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@600;700;900&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    html, body { width: 1200px; height: 630px; margin: 0; padding: 0; overflow: hidden; background: #F5EFDD; }
+    body { position: relative; }
+    .og__frame { position: absolute; inset: 26px; border: 1px solid #A21E28; }
+    .og__frame::before { content: ''; position: absolute; inset: 4px; border: 2px solid #16533A; }
+    .og__corner { position: absolute; width: 12px; height: 12px; background: #A21E28; }
+    .og__corner--tl { top: 20px; left: 20px; } .og__corner--tr { top: 20px; right: 20px; }
+    .og__corner--bl { bottom: 20px; left: 20px; } .og__corner--br { bottom: 20px; right: 20px; }
+    .og__inner { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding-top: 10px; }
+    .lockup--og { font-size: 160px; }
+    .lockup--og .lockup__descriptor { font-size: 25px; margin-top: 6px; }
+    .og__tagline { font: italic 400 27px / 1.4 'Libre Baskerville', Georgia, serif; color: #16533A; margin: 22px 0 0; }
+    .og .tricolor { margin: 18px auto 0; }
+    .og__address { font: 400 22px / 1.4 'Libre Baskerville', Georgia, serif; color: #0D2D1E; margin: 18px 0 0; }
+    .og__phone { font: 700 30px / 1.2 'Playfair Display', Georgia, serif; color: #A21E28; margin: 4px 0 0; }
+  </style>
+</head>
+<body class="og">
+  <div class="og__frame"></div>
+  <i class="og__corner og__corner--tl"></i><i class="og__corner og__corner--tr"></i>
+  <i class="og__corner og__corner--bl"></i><i class="og__corner og__corner--br"></i>
+  <div class="og__inner">
+    {{lockup}}
+    <p class="og__tagline">{{tagline}}</p>
+    {{tricolor}}
+    <p class="og__address">{{address}}</p>
+    <p class="og__phone">{{phone}}</p>
+  </div>
+</body>
+</html>

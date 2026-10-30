@@ -1,5 +1,7 @@
 candidates/
 shots/
+/og.html
+/icon.html
 node_modules/
 *.log
 Thumbs.db

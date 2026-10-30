@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <script>
+    /* The js class goes on before anything can paint, so the finished page never flashes before
+       the entrance in js/main.js hides it. If that file fails to load (its onerror below) or has
+       not run within 2.5 seconds, the class comes off again and the page shows itself, complete
+       and still, without motion. */
+    (function (h) {
+      h.classList.add('js'); h.setAttribute('data-js', 'pending');
+      window.ventisLate = function () {
+        if (h.getAttribute('data-js') === 'pending') { h.classList.remove('js'); h.setAttribute('data-js', 'late'); }
+      };
+      setTimeout(window.ventisLate, 2500);
+    })(document.documentElement);
+  </script>
+  {{head}}
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italianno&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,900&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+{{jsonld}}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <div class="frame" aria-hidden="true">
+    <i class="frame__mat frame__mat--t"></i>
+    <i class="frame__mat frame__mat--b"></i>
+    <i class="frame__mat frame__mat--l"></i>
+    <i class="frame__mat frame__mat--r"></i>
+    <svg class="frame__rule frame__rule--outer"><rect pathLength="1"></rect></svg>
+    <svg class="frame__rule frame__rule--inner"><rect pathLength="1"></rect></svg>
+    <i class="frame__corner frame__corner--tl"></i>
+    <i class="frame__corner frame__corner--tr"></i>
+    <i class="frame__corner frame__corner--bl"></i>
+    <i class="frame__corner frame__corner--br"></i>
+  </div>
+
+  {{header}}
+
+  <main id="main" tabindex="-1">
+    {{hero}}
+
+    {{platter}}
+
+    {{menu}}
+
+    {{brunch}}
+
+    {{cantina}}
+
+    {{aperitivo}}
+
+    {{visit}}
+  </main>
+
+  {{footer}}
+
+  {{quickbar}}
+
+  <script src="js/main.js" defer onerror="window.ventisLate()"></script>
+</body>
+</html>
