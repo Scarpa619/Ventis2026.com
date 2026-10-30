@@ -376,6 +376,8 @@ function visit() {
           <p class="visit__line"><a class="visit__email" href="mailto:${attr(r.email)}">${esc(r.email)}</a></p>
         </address>
         <a class="btn btn--green btn--big" href="${attr(r.links.directions)}" target="_blank" rel="noopener">Get Directions${mapsHint}</a>
+        <h3 class="visit__h visit__h--catering">${esc(r.catering.title)}</h3>
+        <p class="visit__catering">${esc(r.catering.text)}</p>
       </div>
       <div class="visit__map">
         <p class="visit__map-note" aria-hidden="true">${esc(a.street)}, ${esc(a.city)}</p>
@@ -417,7 +419,7 @@ function quickbar() {
 // ---------- head: meta and JSON-LD ----------
 
 const title = `${r.name} | Italian Restaurant and Aperitivo Bar in ${r.address.city}, ${r.address.state}`;
-const description = `${r.cuisine} restaurant and aperitivo bar in ${r.address.city}, ${r.address.state}. ${data.specialty.name}, pasta plates, salads, beer and wine, and ${data.brunch.name}.`;
+const description = `${r.cuisine} restaurant, aperitivo bar and caterer in ${r.address.city}, ${r.address.state}. ${data.specialty.name}, pasta plates, salads, beer and wine, and ${data.brunch.name}.`;
 
 function jsonLd() {
   const item = (name, desc, price) => ({

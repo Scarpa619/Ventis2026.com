@@ -54,4 +54,4 @@ The site is the printed menu brought to the screen: ivory paper, the brand green
 
 ## What is not on the site yet
 
-Photos (none exist; the page uses drawn SVG art and is complete without them), catering (not confirmed), social media links, reservations and online ordering. All can be added later.
+Photos (none exist; the page uses drawn SVG art and is complete without them), a catering menu with prices (the site has a short catering note under Visit or Call, in `data/menu.json` under `restaurant.catering`), social media links, reservations and online ordering. All can be added later.

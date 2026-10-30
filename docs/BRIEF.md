@@ -70,7 +70,7 @@ Tracked out capitals are part of the brand only in the APERITIVO BAR lockup and 
 8. Hours and Vieni a Trovarci: the hours, the address, phone, email, a Get Directions button and an embedded Google map (iframe with `loading="lazy"`, a `title`, `src` from `links.mapEmbed` in the data file).
 9. Footer: small wordmark, address, phone, email, "Grazie, and we'll see you soon!", and "© 2026 Venti's Aperitivo Bar".
 
-Do not add a catering section, reservations, online ordering, social links, a newsletter, reviews, a gallery, an about story or a blog. None of these exist yet.
+Do not add a catering menu, reservations, online ordering, social links, a newsletter, reviews, a gallery, an about story or a blog. None of these exist yet. (October 29, 2026: at Joe's request a short catering note with the contact details sits under Visit or Call; Mark is a caterer.)
 
 ## Copy bank (approved; use these words, do not paraphrase them)
 

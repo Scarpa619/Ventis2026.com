@@ -20,6 +20,10 @@
     "phoneDisplay": "858.864.6868",
     "phoneTel": "+18588646868",
     "email": "italiancaterings@aol.com",
+    "catering": {
+      "title": "Catering",
+      "text": "Venti's caters. The same recipes as the dining room, brought to your office, your party or your family table. Call or email with the date and the headcount, and we will take care of the rest."
+    },
     "hours": [
       {
         "label": "Monday through Saturday",

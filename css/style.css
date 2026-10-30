@@ -471,6 +471,9 @@ svg { display: block; }
 .badge {
   flex: none; display: inline-grid; place-items: center; width: 84px; height: 84px;
   border-radius: 50%; font: 700 40px / 1 var(--display);
+  /* Playfair's figures are x-height tall and sit on the baseline, so a centered line box leaves
+     the numeral low in the circle; this padding lifts the ink to the circle's center at every size. */
+  box-sizing: border-box; padding-bottom: .31em;
 }
 .badge--red { background: var(--red); color: var(--paper); }
 .badge--ivory { background: var(--paper); color: var(--red); width: 52px; height: 52px; font-size: 26px; }
@@ -679,6 +682,8 @@ svg { display: block; }
 .visit__phone:hover { color: var(--red-deep); text-decoration: underline; }
 .visit__email { color: var(--ink); }
 .visit__info > .btn { margin-top: 16px; }
+.visit__h--catering { margin-top: 40px; }
+.visit__catering { font-size: 19px; line-height: 1.5; color: var(--ink); max-width: 30em; }
 .visit__map { position: relative; border: 2px solid var(--green); padding: 7px; background: var(--paper); }
 .visit__map::before { content: ''; position: absolute; inset: 3px; border: 1px solid var(--green); pointer-events: none; }
 .visit__map-note { position: absolute; inset: 7px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 10px; padding: 24px; text-align: center; font-size: var(--body-size); color: var(--ink); background: var(--cream); }
@@ -689,6 +694,7 @@ svg { display: block; }
   .visit__grid { grid-template-columns: 1fr; gap: 36px; }
   .visit__h { font-size: 30px; }
   .hours { margin-bottom: 32px; }
+  .visit__h--catering { margin-top: 32px; }
   .visit__line { margin-bottom: 2px; }
   .visit__iframe { aspect-ratio: 1 / 1; }
   /* Every phone and email link is a 44px tap target on a phone. */
